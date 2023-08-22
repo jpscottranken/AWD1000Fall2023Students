@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: auto;
+    width: 600px;
+    border: 3px solid blue;
+}
+h1 {
+	color: blue;
+	margin-top: 0;
+}
+main {
+    padding: 1em 2em;
+}
+div {
+	margin-bottom: 0.5em;
+}
+label {
+	float: left;
+    width: 16em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+}
+#calculate {
+	margin-bottom: 1em;
+}

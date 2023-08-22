@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invoice Total Calculator</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+
+<body>
+    <main>
+		<h1>Invoice Total Calculator</h1>
+		<div>
+			<label for="type">Customer Type:</label>
+			<select id="type">
+				<option value="reg">Regular</option>
+				<option value="loyal">Loyalty Program</option>
+				<option value="honored">Honored Citizen</option>
+			</select>
+		</div>
+		<div>
+			<label for="subtotal">Invoice Subtotal:</label>
+			<input type="text" id="subtotal">
+		</div>
+		<div>
+			<label for="invoice_date">Invoice Date:</label>
+			<input type="text" id="invoice_date">
+		</div>
+		<hr>
+		<div>
+			<label for="percent">Discount Percent:</label>
+			<input type="text" id="percent" disabled>%
+		</div>
+		<div>
+			<label for="discount">Discount Amount:</label>
+			<input type="text" id="discount" disabled>
+		</div>
+		<div>
+			<label for="total">Invoice Total:</label>
+			<input type="text" id="total" disabled><br>
+		</div>
+		<div>
+			<label for="due_date">Due Date:</label>
+			<input type="text" id="due_date" disabled>
+		</div>
+		<div>
+			<label>&nbsp;</label>
+			<input type="button" id="calculate" value="Calculate">
+			<input type="button" id="clear" value="Clear Entries">
+		</div>
+	</main>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="invoice.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join Email List</title>
+    <link rel="stylesheet" href="email_list.css">
+</head>
+<body>
+    <main>
+        <h1>Please join our email list</h1>
+        <form id="email_form" name="email_form" 
+              action="join.html" method="get">
+            <div>
+                <label for="email_1">Email Address:</label>
+                <input type="text" id="email_1" name="email_1">
+                <span>*</span>
+            </div>
+            
+            <div>
+                <label for="email_2">Confirm Email Address:</label>
+                <input type="text" id="email_2" name="email_2">
+                <span>*</span>
+            </div>
+            
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+                <span>*</span>
+            </div>
+                        
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+                <span>*</span>
+            </div>
+                        
+            <div>
+                <label for="state">State Code:</label>
+                <input type="text" id="state" name="state">
+                <span>*</span>
+            </div>
+                                    
+            <div>
+                <label for="zip_code">Zip Code:</label>
+                <input type="text" id="zip_code" name="zip_code">
+                <span>*</span>
+            </div>
+            
+            <div>
+                <label>Email me about:</label>
+                <input type="checkbox" name="web" id="web" value="web">Web books
+                <input type="checkbox" name="java" id="java" value="java">Java books
+                <input type="checkbox" name="net" id="net" value="net">.NET books
+                <span>*</span>
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" id="join_list" name="join_list" value="Join List">
+                <input type="reset" id="reset" name="reset" value="Reset">
+            </div>
+
+            
+        </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="email_list.js"></script>
+</body>
+</html>

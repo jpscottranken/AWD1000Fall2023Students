@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PIG</title>
+    <link rel="stylesheet" href="pig.css">
+</head>
+
+<body>
+    <main>
+		<h1>Let's Play PIG!</h1>
+		<fieldset>
+			<legend>Rules</legend>
+			<ul>
+				<li>First player to <span id="winning_total"></span> wins.</li>
+				<li>Players take turns rolling the die.</li>
+				<li>Turn ends when player rolls a 1 or chooses to hold.</li>
+				<li>If player rolls a 1, they lose all points earned during the turn.</li>
+				<li>If player holds, points earned during the turn are added to their total.</li>
+			</ul>
+		</fieldset>
+
+		<label for="player1">Player 1</label>
+		<input type="text" id="player1" >
+
+		<label for="score1">Score</label>
+		<input type="text" id="score1" value="0" disabled><br>
+
+		<label for="player2">Player 2</label>
+		<input type="text" id="player2">  
+
+		<label for="score2">Score</label>
+		<input type="text" id="score2" value="0" disabled>
+
+		<input type="button" id="new_game" value="New Game"><br>
+
+		<section id="turn" class="hide">
+			<div><span id="current"></span>'s turn</div>
+
+			<input type="button" id="roll" value="Roll">
+			<input type="button" id="hold" value="Hold">
+
+			<label for="die">Die</label>
+				<input type="text" id="die" disabled>
+				
+			<label for="total">Total</label>
+				<input type="text" id="total" disabled> 
+		</section>
+		
+	</main>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="pig.js"></script>
+</body>
+</html>

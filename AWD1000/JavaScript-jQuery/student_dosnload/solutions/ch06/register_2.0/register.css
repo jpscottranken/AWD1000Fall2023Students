@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 640px;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+h1 {
+    color: blue;
+}
+div {
+    margin-bottom: 1em;
+}
+label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+    vertical-align: top;
+}
+input, select, textarea {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+select { 
+    width: 13em; 
+}
+textarea {
+    height: 5em;
+    width: 20em;
+}
+span {
+    color: red;
+    vertical-align: top;
+}
+.messages {
+    border: 3px solid red;
+    color: red;
+    padding: 2em;
+    margin-bottom: 2em;
+}

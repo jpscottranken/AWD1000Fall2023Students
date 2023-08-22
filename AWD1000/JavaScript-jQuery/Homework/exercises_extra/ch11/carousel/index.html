@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bxSlider Plugin</title>
+    <link href="carousel.css" rel="stylesheet">
+    <link href="jquery.bxslider.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>About Us</h1>
+        <p>On June 6th, 2020, Vecta Corp. moved into its new 4 story, 35,000 square foot facility. 
+        	Below are a few pictures of the new facility.</p>
+        <ul id="slider">
+            <li><img src="images/building_01.jpg" alt="" title="Front"></li>
+            <li><img src="images/building_02.jpg" alt="" title="Left side"></li>
+            <li><img src="images/building_03.jpg" alt="" title="Rear"></li>
+            <li><img src="images/building_04.jpg" alt="" title="Offices"></li>
+            <li><img src="images/building_05.jpg" alt="" title="Conference room"></li>
+        </ul>
+        <p id="pager"></p>
+    </main>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.bxSlider.min.js"></script>
+    <script>
+    	$(document).ready( () => {
+        	$("#slider").bxSlider({
+				auto: true,
+				minSlides: 2,
+				maxSlides: 2,
+				slideWidth: 250,
+				slideMargin: 10
+			});
+    	});
+    </script>
+</body>
+</html>

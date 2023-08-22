@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Miles Per Gallon Calculator</title>
+    <link rel="stylesheet" href="rectangle.css">
+</head>
+<body>
+    <main>
+        <h1>The Area and Perimeter Calculator</h1>
+        <script>
+            "use strict";
+            
+            // get length from user
+            const length = parseInt(prompt("Enter length"));
+
+            // get width from user
+            const width = parseInt(prompt("Enter width"));
+
+            // calculate area
+            const area = length * width;
+
+            // calculate perimeter
+            const perimeter = (2 * length) + (2 * width);
+
+            // display results
+            const html = `<p><label>Length: </label>${length}</p>
+                <p><label>Width: </label>${width}</p>
+                <p><label>Area: </label>${area}</p>
+                <p><label>Perimeter: </label>${perimeter}</p>`;
+            document.write(html);
+        </script>    
+    </main>
+</body>
+</html>

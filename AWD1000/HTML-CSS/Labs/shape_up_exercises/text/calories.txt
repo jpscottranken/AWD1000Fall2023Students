@@ -1,0 +1,36 @@
+Calorie Counter
+
+Category	Food	Serving size	Calories
+Beef	Frankfurter, Beef	1 each	184
+	Ground Beef	4 oz	264
+	T-Bone Steak	8 ounces	402
+
+Bread	Bagel, plain	1 bagel	360
+	Bread, sliced	1 slice	60 to 80
+	English Muffin	1	135
+
+Cereal	Cheerios	1 cup	110
+	Corn Flakes	1 cup	100
+	Oatmeal, quick	1 cup cooked	145
+
+Cheese	American	1 ounce	106
+	Swiss	1 ounce	100
+	Cheddar	1 ounce	114
+	Cottage Cheese, regular	1/2 cup	117
+
+Fruit	Apple	1 medium	80
+	Banana	1	105
+
+Vegetables	Corn, fresh	1 medium ear	88
+	Carrot, raw	1 medium	25
+	Celery	1 large stalk	9
+
+Miscellaneous	Milk, whole	1 cup	157
+	Eggs	1	70
+	Peanut butter	2 tablespoons	188
+	Pasta	1/2 cup dry	200
+	Rice	1 cup cooked	204
+	Canned tuna, in water	2 ounces	70
+	Baked potato	1 medium	130
+
+Note: Contact us to get a detailed list of food calories.

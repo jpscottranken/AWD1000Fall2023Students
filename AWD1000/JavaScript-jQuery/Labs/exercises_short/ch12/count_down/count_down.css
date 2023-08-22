@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 500px;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+h1 {
+    color: blue;
+}
+div {
+    margin-bottom: 1em;
+}
+label {
+    display: inline-block;
+    width: 6em;
+}
+input {
+    margin-left: 1em;
+}
+#message {
+    font-weight: bold;
+    color: red;
+    text-align: left;
+    width: auto;
+}

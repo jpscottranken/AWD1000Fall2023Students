@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NASA's Mars Rover Photos</title>
+    <link rel="stylesheet" href="rover.css">
+</head>
+
+<body>
+    <main>
+        <h1>Mars Rover Photos</h1>
+        <div>
+            <label>Select a Rover</label>
+            <select id="rover"></select>
+        </div>
+        <div id="options" class="hide">
+            <table>
+                <tr>
+                    <th>Name</th><th>Status</th><th># of Photos</th><th>Landing Date</th><th>Max Date</th>
+                </tr>
+                <tr>
+                    <td id="name"></td>
+                    <td id="status"></td>
+                    <td id="photos"></td>
+                    <td id="landing"></td>
+                    <td id="max"></td>
+                </tr>
+            </table>
+            <div>
+                <label>Select a Date:</label>
+                <select id="year"></select>
+                <select id="month"></select>
+                <select id="date"></select>
+            </div>
+            <div>
+                <label>Select a Camera</label>
+                <select id="camera"></select>
+            </div>
+            <div>
+                <input type="button" id="view" value="View photos">
+                <span class="error"></span>
+            </div>
+        </div>
+        <div id="display"></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="rover.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="password.css">
+</head>
+<body>
+    <main>
+        <h1>Generate a strong password</h1>
+		<div>
+			<label for="num">Number of characters:</label>
+			<input type="text" id="num">
+		</div>
+		<div>
+			<label for="password">Password:</label>
+			<input type="text" id="password" disabled>
+		</div>
+		<div>
+			<label></label>
+			<input type="button" id="generate" value="Get Password">
+			<input type="button" id="clear" value="Clear">
+		</div>
+    </main>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   	<script src="password.js"></script>
+</body>
+</html>

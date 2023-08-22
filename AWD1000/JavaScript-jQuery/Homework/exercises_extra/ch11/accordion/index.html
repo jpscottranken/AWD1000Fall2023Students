@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Accordion</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="accordion.css">
+</head>
+	
+<body>
+	<main>
+		<h1>Murach's HTML5 and CSS3 (4th Edition)</h1>
+        <!-- Tabs HTML code -->
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Book description</a></li>
+                <li><a href="#tabs-2">About the authors</a></li>
+                <li><a href="#tabs-3">Who this book is for</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>Murach's HTML5 and CSS3 provides all HTML and CSS a professional needs, and it 
+				adds coverage of Flexible Box and Grid Layout, two new CSS3 ways to implement page 
+				layouts. So whether you're a web designer, a JavaScript programmer, a server-side 
+				programmer, or a rookie, this book delivers all the HTML and CSS skills that you 
+				need on the job. It begins with an 8-chapter hands-on course that teaches you HTML
+				and CSS from scratch, including the latest HTML5 and CSS3 features.</p>
+                <p>After that, you'll learn how to use Flexible Box and Grid Layout, and how to work 
+				with forms and data validation. Then you'll learn how to enhance a site with video 
+				clips, CSS3 transitions, transforms, and animations. You'll learn how to design and 
+				deploy a website, as well as other professional skills like how to use JavaScript and 
+				jQuery and how to use development tools like Bootstrap, SASS, and Emmet. And after 
+				you've learned all the skills that you need, this book becomes the best on-the-job 
+				reference you've ever used.</p>
+            </div>
+            <div id="tabs-2">
+                <p><strong>Anne Boehm</strong> has over 30 years of experience as an enterprise programmer. She got 
+				started with Visual Basic in the days of VB5 and has been programming on .NET since 
+				its inception. She added C# to her programming repertoire in the mid-2000s, and she's 
+				authored or co-authored our books on Visual Basic, C#, ADO.NET, ASP.NET, and HTML5/CSS3.</p>
+				<p><strong>Zak Ruvalcaba</strong> has been researching, designing, and developing for the web since 
+				1995. His skill set ranges from HTML5/CSS3 and JavaScript/jQuery to .NET with VB 
+				and C#, and he's created web applications for companies like HP, Toshiba, IBM, 
+				Gateway, Intuit, Peachtree, Dell, and Microsoft. He has authored or co-authored our 
+				books on HTML5/CSS3, jQuery, and Dreamweaver CC.</p>
+            </div>
+            <div id="tabs-3">
+                <p>Due to our unique presentation methods and this book's modular organization,
+				this is the right book for any web developer who wants to use HTML5 and CSS3 effectively. That 
+				includes:</p>
+				<ul>
+					<li>budding web developers</li> 
+					<li>web developers who haven't yet upgraded their websites to HTML5 and CSS3</li>
+					<li>web developers who need to expand and enhance their skillsets</li>
+				</ul>
+				<p>As we see it, mastering HTML5 and CSS3 will make any web developer at any level more 
+				effective.</p>
+            </div>
+        </div>
+        <!-- End Tabs HTML code -->
+    </main>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <!-- jQuery call to the tabs() method. -->
+    <script>
+		$(document).ready( () => {
+			$("#tabs").tabs();
+		});
+	</script>
+</body>
+</html>

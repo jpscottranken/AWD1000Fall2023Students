@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Account Profile</title>
+    <link rel="stylesheet" type="text/css" href="account_profile.css">
+</head>
+
+<body>
+    <main class="profile">
+        <h1>My Account Profile</h1>
+        <p>Thank you for updating your profile! Please review the information below to make sure it is correct.</p>
+        <p id="profile">&nbsp;</p>
+
+        <input type="button" id="back" value="Back">
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        // display query string
+        $("#back").click( () => {
+            history.back();
+        });
+    </script>
+</body>
+</html>

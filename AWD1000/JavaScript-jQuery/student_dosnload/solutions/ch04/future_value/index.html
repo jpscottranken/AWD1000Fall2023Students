@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Future Value Calculator</title>
+    <link rel="stylesheet" href="future_value.css">
+</head>
+<body>
+    <main>
+        <h1>The Future Value Calculator</h1>
+        <div>
+            <label for="investment">Total Investment:</label>
+            <input type="text" id="investment">
+        </div>
+            
+        <div>
+            <label for="rate">Annual Interest Rate:</label>
+            <input type="text" id="rate">
+        </div>
+            
+        <div>
+            <label for="years">Number of Years:</label>
+            <input type="text" id="years">
+        </div>
+
+        <div>
+            <label for="future_vallue">Future Value:</label>
+            <input type="text" id="future_value" disabled>
+        </div>
+            
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="calculate" value="Calculate Future Value">
+        </div>     
+    </main>
+    <script src="future_value.js"></script>
+</body>
+</html>

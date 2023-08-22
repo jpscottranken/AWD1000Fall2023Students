@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <main>
+        <h1>Digital clock with stopwatch</h1>
+        <fieldset>
+            <legend>Clock</legend>
+            <span id="hours"></span>:
+            <span id="minutes"></span>:
+            <span id="seconds"></span>
+            <span id="ampm"></span>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Stop Watch</legend>
+            <input type="button" id="start" value="Start">
+            <input type="button" id="stop" value="Stop">
+            <input type="button" id="reset" value="Reset">
+            <span id="s_minutes">00</span>:
+            <span id="s_seconds">00</span>:
+            <span id="s_ms">000</span>
+        </fieldset>
+    </main>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="library_clock.js"></script>
+    <script src="library_stopwatch.js"></script>
+    <script src="clock.js"></script>
+</body>
+</html>

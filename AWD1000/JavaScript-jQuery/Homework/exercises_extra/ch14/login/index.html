@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+	<main>
+		<h1>My Website</h1>
+		<div>
+			<label for="user">User name:</label>
+			<input type="text" id="user">
+			<span class="message"></span>
+		</div>
+		<div>
+			<label></label>
+			<input type="button" id="login" value="Log In">
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   	<script src="login.js"></script>
+    <script>
+        "use strict";
+
+        const user = getCookieByName("user");
+        if (user) { // logged in
+            goToPage("login.html");
+        } else {
+            $("#user").focus();
+            $("#login").click( () => {
+                const user = $("#user").val();
+
+                if (user) {
+                    setCookie("user", user);
+                    goToPage("login.html");
+                } else {
+                    $("#user").next().text( "Please enter a user name." );
+                    $("#user").focus();
+                }
+            });
+        }
+    </script>
+</body>
+</html>

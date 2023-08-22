@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Make Change</title>
+   	<link rel="stylesheet" href="make_change.css">
+</head>
+
+<body>
+	<main>
+		<h1>Change Calculator</h1>
+
+		<label>Enter amount of change due (0-99):</label>
+		<div>
+			<input type="text" id="cents" />
+			<input type="button" value="Calculate" name="calculate" id="calculate" />
+		</div>
+		<div>
+			<label>Quarters:</label>
+			<input type="text" id="quarters" disabled>
+		</div>
+		<div>
+			<label>Dimes:</label>
+			<input type="text" id="dimes" disabled>
+		</div>
+		<div>
+			<label>Nickels:</label>
+			<input type="text" id="nickels" disabled>
+		</div>
+		<div>
+			<label>Pennies:</label>
+			<input type="text" id="pennies" disabled>
+		</div>
+	</main>
+	<script src="make_change.js"></script>
+</body>
+</html>

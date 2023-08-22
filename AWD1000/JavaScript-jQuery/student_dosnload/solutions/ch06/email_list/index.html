@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join Email List</title>
+    <link rel="stylesheet" href="email_list.css">
+</head>
+<body>
+    <main>
+        <h1>Please join our email list</h1>
+        <form id="email_form" name="email_form" 
+              action="join.html" method="get">
+            <div>
+                <label for="email_1">Email Address:</label>
+                <input type="text" id="email_1" name="email_1">
+                <span></span>
+            </div>
+            
+            <div>
+                <label for="email_2">Confirm Email Address:</label>
+                <input type="text" id="email_2" name="email_2">
+                <span>*</span>
+            </div>
+            
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+                <span>*</span>
+            </div>
+            
+            <div>
+                <label>&nbsp;</label>
+                <input type="button" id="join_list" value="Join List">
+                <input type="button" id="clear_form" value="Clear Form">
+            </div>     
+            
+        </form>
+    </main>
+    <script src="email_list.js"></script>
+</body>
+</html>

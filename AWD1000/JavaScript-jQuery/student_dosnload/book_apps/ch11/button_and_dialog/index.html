@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Button and dialog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    </head>
+
+    <body>
+    <section>
+      <h1>Featured Book</h1>
+      <a id="book"><img src="images/4HTM.jpg" alt="HTML5 and CSS3 book" width="159" height="192" /></a>
+      <div id="dialog" title="HTML5 and CSS3" style="display: none;">
+          <p>Teach yourself how to design web pages the way the professionals do, by using HTML and CSS 
+          in tandem to structure and format the page content. Packed with expert practices, our HTML5 
+          and CSS3 book guides you through each step as you learn how to develop professional sites 
+          while maintaining browser compatibility.</p>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready( () => {
+            $("#book").button();
+            $("#book").click( () => 
+                $("#dialog").dialog({ modal:true })
+            );
+        })
+    </script>
+</body>
+</html>

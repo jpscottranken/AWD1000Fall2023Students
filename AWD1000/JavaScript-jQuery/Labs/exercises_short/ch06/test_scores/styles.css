@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 540px;
+    border: 3px solid blue;
+}
+h1 {
+	color: blue;
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+main {
+    padding: 1em 2em;
+}
+div {
+	margin-bottom: 1em;
+}
+label {
+    display: inline-block;
+    width: 4em;
+    text-align: right;
+}
+input, textarea {
+    margin-left: 1em;
+    margin-right: .5em;
+}
+textarea {
+	width: 20em;
+	height: 8em;
+	font-size: 120%;
+}
+span {
+    color: red;
+}

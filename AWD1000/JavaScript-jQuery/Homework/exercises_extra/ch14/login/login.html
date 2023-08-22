@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+	<main class="profile">
+        <div>
+            <h1>My Website</h1>
+		    <h2>Welcome, <span id="name"></span>!</h2>
+        </div>
+        <div>
+            <input type="button" id="logout" value="Log Out">
+        </div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   	<script src="login.js"></script>
+    <script>
+        "use strict";
+
+        const user = getCookieByName("user");
+        if (user) { // logged in
+            $("#name").text(user);
+            $("#logout").focus();
+
+            $("#logout").click( () => {
+                deleteCookie("user");
+                goToPage("index.html");
+            });
+        } else {
+            goToPage("index.html");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <main>
+        <h1>Register for an Account</h1>
+        <form action="confirm.html" method="get">
+            <div>
+                <label for="email_address">E-Mail:</label>
+                <input type="text" name="email_address" id="email_address">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="phone">Mobile Phone:</label>
+                <input type="text" name="phone" id="phone">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="">Select a country</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                </select>
+                <span>*</span>
+            </div>
+            <div>
+                <label>Contact me by:</label>
+                <input type="radio" name="contact" id="text"
+                    value="text" checked>Text
+                <input type="radio" name="contact" id="email"
+                    value="email">Email
+                <input type="radio" name="contact" id="mobile"
+                    value="mobile">Mobile phone
+                <input type="radio" name="contact" id="none"
+                    value="none">Don't contact me
+            </div>
+            <div>
+                <label>Terms of Service:</label>
+                <input type="checkbox" name="terms" id="terms"
+                    value="yes">I accept
+                <span>*</span>
+            </div>
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" row="5" cols="40"></textarea>
+                <span>*</span>
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="button" id="register" value="Register">
+                <input type="button" id="reset_form" value="Reset">
+            </div>
+
+        </form>
+    </main>
+    <script src="register.js"></script>
+</body>
+</html>

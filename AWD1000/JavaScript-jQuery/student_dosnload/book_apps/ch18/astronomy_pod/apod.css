@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 700px;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+h1, h3 {
+    color: blue;
+}
+div {
+    margin-bottom: 1em;
+}
+label {
+    display: inline-block;
+    width: 5em;
+}
+input {
+    margin-right: 0.5em;
+}
+.error {
+    color: red;
+}
+.right {
+    float: right;
+}

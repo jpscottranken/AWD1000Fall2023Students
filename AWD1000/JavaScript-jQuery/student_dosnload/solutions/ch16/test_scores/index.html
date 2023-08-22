@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Average Test Scores</title>
+    <link rel="stylesheet" href="test_scores.css">
+</head>
+<body>
+    <main>
+        <h1>My Test Scores</h1>
+        <div>
+            <label>All scores:</label>
+            <span id="all"></span>
+        </div>
+        <div>
+            <label>Average score:</label>
+            <label id="avg"></label>
+        </div>
+
+        <div>
+            <label>Last 3 scores:</label>
+            <label id="last"></label>
+        </div>
+
+        <div>
+            <label for="score">Enter new score:</label>
+            <input type="text" id="score">
+            <input type="button" id="add_score" value="Add Score"><span></span>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="lib_test_scores.js"></script>
+    <script src="test_scores.js"></script>
+</body>
+</html>

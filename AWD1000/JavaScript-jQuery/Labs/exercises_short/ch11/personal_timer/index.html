@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal timer</title>
+    <link href="../jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet">    
+    <link href="timer.css" rel="stylesheet">
+</head>
+	
+<body>
+	<main>
+		<h1>Personal Timer</h1>
+        <h2>Please enter the total time and interval for the timer in seconds</h2>
+	    <label for="time">Total time:</label>
+	    <input type="text" id="time">
+	    <span id="time_error">*</span><br>
+        <label for="interval">Interval:</label>
+	    <input type="text" id="interval">
+	    <span id="interval_error">*</span><br>
+        <label>&nbsp;</label>
+        <input type="button" id="start_timer" value="Start Timer"><br><br>		
+		<label>Elapsed time:</label> 
+        <input type="text" id="elapsed" disabled>
+        <div id="complete">
+ 			<span></span>       	
+        </div>				
+	</main>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="timer.js"></script></body>
+</html>

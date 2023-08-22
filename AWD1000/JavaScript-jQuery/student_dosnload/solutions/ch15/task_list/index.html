@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Task List</title>
+    <link rel="stylesheet" href="task_list.css">
+</head>
+
+<body>
+    <main>
+        <h1>Task List</h1>
+        <div id="tasks">
+            <label for="task_list">Task List</label><br>
+            <textarea id="task_list" rows="6" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="task">Task:</label><br>
+            <input type="text" name="task" id="task">
+        </div>
+        <div>
+            <label for="due_date">Due Date:</label><br>
+            <input type="text" name="due_date" id="due_date">
+        </div>
+        <div>
+            <input type="button" id="add_task" value="Add Task"><br>
+            <input type="button" id="clear_tasks" value="Clear Tasks"><br>
+            <input type="button" id="filter" value="Filter">
+        </div>
+    </main>    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="task_list.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Task List</title>
+  <link type="text/css" rel="stylesheet" href="task_list.css">
+</head>
+<body>
+  <main>
+    <h1>Task List</h1> 
+    <section id="tasks">
+        <label for="task_list">Task List</label><br>
+        <textarea id="task_list" rows="6" cols="50"></textarea>
+    </section>
+    
+    <label for="task">Task</label><br>
+    <input type="text" name="task" id="task"><br>
+
+    <input type="button" name="add_task" id="add_task" value="Add Task"><br>
+    <input type="button" name="clear_tasks" id="clear_tasks" value="Clear Tasks">
+  </main> 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="task_list.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 720px;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+h1 {
+    font-size: 150%;
+    color: blue;
+    margin-bottom: .5em;
+}
+div {
+    margin-bottom: 1em;
+}
+input {
+    width: 22em;
+    margin-bottom: .5em;
+}
+#tasks {
+    margin-top: 0;
+    float: right; 
+    width: 24em;
+    min-height: 5em;
+}

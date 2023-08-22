@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Scores</title>
+    <link rel="stylesheet" href="scores.css">
+</head>
+
+<body>
+    <main>
+        <section>
+			<h1>Student Scores</h1>
+			<div>
+				<label>First Name:</label>
+				<input type="text" id="first_name">
+			</div>
+			<div>
+				<label>Last Name:</label>
+				<input type="text" id="last_name">
+			</div>
+			<div>
+				<label>Score:</label>
+				<input type="text" id="score">
+			</div>
+			<div>
+				<label></label>
+				<input type="button" id="add_button" value="Add Student Score">
+			</div>
+        </section>
+		<aside>
+			<div>
+				<textarea id="scores" rows="7" cols="35"></textarea>
+			</div>
+			<div>
+				<label>Average score:</label>
+				<label id="average_score"></label>
+			</div>
+			<div>
+				<input type="button" id="clear_button" value="Clear Student Scores">
+				<input type="button" id="sort_button" value="Sort By Last Name">
+			</div>
+		</aside>
+    </main>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   	<script src="scores.js"></script>
+</body>
+</html>
